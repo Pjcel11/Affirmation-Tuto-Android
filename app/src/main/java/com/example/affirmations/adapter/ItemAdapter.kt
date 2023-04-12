@@ -54,7 +54,8 @@ class ItemAdapter (
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.stringResourceId)
-
+        holder.imageView.setImageResource(item.imageResourceId)
     }
+
 
 }
